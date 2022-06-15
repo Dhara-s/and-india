@@ -1,0 +1,25 @@
+{
+    'name': 'Microsoft Azure OAuth2 SSO Integration',
+    'version': '0.1',
+    'category': 'Extra Tools',
+    'sequence': 1,
+    'price': 30.00,
+    'license': 'OPL-1',
+    'currency': 'USD',
+    'author': 'Techspawn Solutions Pvt. Ltd.',
+    'website': 'http://www.techspawn.com',
+    'summary': """Odoo Microsoft Azure SSO Integration module allows instant and secure login with the help of Microsoft SSO and OAuth2 """,
+    'description': """This module allows you to sync Microsot users with Odoo seamlessly.""",
+    'demo_xml': [],
+    'update_xml': [],
+    'depends': ['auth_oauth'],
+    'data': ['data/data.xml',
+             'views/oauth_provider_view.xml'
+             ],
+    'images': ['static/description/main.gif'],
+    'js': [],
+    'application': True,
+    'installable': True,
+    'auto_install': False,
+}
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

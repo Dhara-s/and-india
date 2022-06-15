@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<odoo>
+    <record model="ir.ui.view" id="auth_oauth.view_oauth_provider_form">
+        <field name="name">auth.oauth.provider.inherit</field>
+        <field name="model">auth.oauth.provider</field>
+        <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <div class="oe_title">
+                        <h1>
+                            SSO Integration
+                        </h1>
+                </div>
+                <group>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="enabled"/>
+                        <field name="body"/>
+                    </group>
+                </group>
+                <notebook>
+                    <page name="keys" string="Keys">
+                        <group>
+                            <group>
+                                <field name="client_id">Microsoft Client Id</field>
+                                <field name='secret_key'/>
+                            </group>
+                        </group>
+                    </page>
+                    <page name="info" string="Information">
+                        <group>
+                    <group>
+                        <field name="auth_endpoint" widget="url"/>
+                        <field name="scope"/>
+                    </group>
+                </group>
+                <group>
+                    <group>
+                        <field name="validation_endpoint" widget="url"/>
+                        <field name="data_endpoint" widget="url"/>
+                    </group>
+                </group>
+                    </page>
+                </notebook>
+            </sheet>
+        </form>
+        </field>
+    </record>
+</odoo>
